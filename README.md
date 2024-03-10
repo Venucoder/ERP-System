@@ -9,8 +9,6 @@ The ERP system is a user-friendly interface for managing key aspects of a busine
   - [Installation](#installation)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Getting Started
 To run the project locally, follow the steps below.
@@ -31,5 +29,5 @@ Ensure you have the following software installed on your machine:
     npm start
 5. Open your web browser and navigate to http://localhost:3000 to view the application.
 
-### Usage
+## Usage
 The ERP system allows users to manage key aspects of their business, including products, orders, and dashboard metrics. Users can navigate between different sections using the menu and perform various actions such as adding, editing, and deleting items.
