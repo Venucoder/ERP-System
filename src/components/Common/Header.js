@@ -109,7 +109,7 @@ function Header() {
               onClick={handleMenuClose}
               component={Link}
               to={item.path}
-              sx={{ display: "flex", alignItems: "center" }} // Align icon and label vertically
+              sx={{ display: "flex", alignItems: "center", padding: '10px 16px'}}
             >
               <ListItemIcon sx={{ minWidth: "auto", marginRight: "8px" }}>
                 {item.icon}

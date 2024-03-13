@@ -8,6 +8,7 @@ const generateMockOrdersData = () => {
     const randomOrderDate = new Date(
       currentDate.getTime() + Math.random() * 30 * 24 * 60 * 60 * 1000
     );
+
     const formattedOrderDate = `${randomOrderDate.getFullYear()}-${String(
       randomOrderDate.getMonth() + 1
     ).padStart(2, "0")}-${String(randomOrderDate.getDate()).padStart(2, "0")}`;
@@ -16,6 +17,7 @@ const generateMockOrdersData = () => {
     const randomDeliveryEstimationDate = new Date(
       randomOrderDate.getTime() + Math.random() * 7 * 24 * 60 * 60 * 1000
     );
+    
     const formattedDeliveryEstimationDate = `${randomDeliveryEstimationDate.getFullYear()}-${String(
       randomDeliveryEstimationDate.getMonth() + 1
     ).padStart(2, "0")}-${String(

@@ -39,7 +39,7 @@ const OrderList = ({
   };
 
   return (
-    <Grid container spacing={2}>
+    <Grid container spacing={2} my={3}>
       {orders.map((order) => (
         <Grid item xs={12} sm={6} md={4} lg={3} key={order.id}>
           <Card

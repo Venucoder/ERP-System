@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import { Container, Typography, Box } from "@mui/joy";
+import { Container, Typography, Box, Button } from "@mui/joy";
+import { Link } from "react-router-dom";
+
 import OrderList from "./OrderList";
 import OrderDetails from "./OrderDetails";
 import { mockOrdersData } from "./ordersdata";
 
 const Orders = () => {
   const [orders, setOrders] = useState(mockOrdersData);
-
   const [selectedOrder, setSelectedOrder] = useState(null);
 
   const handleViewDetails = (order) => {
@@ -32,10 +33,14 @@ const Orders = () => {
 
   return (
     <Container>
-      <Box my={4}>
-        <Typography level="h1" gutterBottom>
+      <Box my={4} display="flex" justifyContent="space-between" alignItems="center">
+        <Typography level="h2" gutterBottom textColor={'var(--text-color-primary)'}>
           Orders Management
         </Typography>
+        {/* Add button at the right top parallel to the title */}
+        <Button component={Link} to="/orders/calendar"sx={{backgroundColor: 'purple'}}>
+          View Orders Calendar
+        </Button>
       </Box>
       <OrderList
         orders={orders}

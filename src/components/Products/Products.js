@@ -42,7 +42,7 @@ const Products = () => {
   return (
     <Container>
       <Box my={4}>
-        <Typography level="h1" gutterBottom>
+        <Typography level="h2" gutterBottom textColor={'var(--text-color-primary)'}>
           Products Management
         </Typography>
         <Button onClick={() => setOpenDialog(true)}>Add Product</Button>
